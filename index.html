@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ramgopal Prajapati's platform offering free online courses. Learn new skills through high-quality, plagiarism-free study materials.">
+    <meta name="keywords" content="Ramgopal Prajapati, free courses, online study, free online learning, e-learning, online education">
+    <meta name="author" content="Ramgopal Prajapati">
     <title>Ramgopal Prajapati</title>
     <style>
         body {
@@ -12,23 +15,28 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             color: #333;
+            padding: 10px;
+            box-sizing: border-box;
         }
+
         .container {
             text-align: center;
             background: rgb(189, 196, 156);
             border-radius: 8px;
             padding: 20px;
             width: 100%;
-            max-width: 500px;
+            max-width: 1100px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             box-sizing: border-box;
             margin-top: 10px;
         }
+
         header {
             margin-bottom: 20px;
         }
+
         .profile-pic {
             width: 150px;
             height: 150px;
@@ -36,34 +44,41 @@
             object-fit: cover;
             border: 5px solid #d4ffd8;
         }
+
         h1 {
             margin: 15px 0;
             font-size: 30px;
             color: #070707;
             font-weight: 600;
         }
+
         p {
             color: #666;
             font-size: 16px;
             margin: 0;
             padding: 0;
         }
+
         .social-icons {
             margin: 20px 0;
         }
+
         .social-icons a {
-            color:black;
-            font-size: 30px;
+            color: black;
+            font-size: 50px;
             margin: 0 10px;
             text-decoration: none;
             transition: color 0.3s ease;
         }
+
         .social-icons a:hover {
             color: #0056b3;
         }
+
         main {
             margin: 20px 0;
         }
+
         .button {
             display: flex;
             align-items: center;
@@ -80,33 +95,135 @@
             transition: background-color 0.3s ease, transform 0.3s ease;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
         .button:hover {
             background-color: #0056b3;
             transform: translateY(-3px);
         }
+
         .button i {
             margin-right: 10px;
             font-size: 22px;
         }
+
         footer {
             font-size: 14px;
             color: #aaa;
             margin-top: 20px;
         }
-        @media (max-width: 600px) {
-            .container {
-                padding: 15px;
-                margin-top: 230px;
-            }
+
+        /* Form Styles */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+          
+            border-radius: 20px;
+            font-size: 18px;
+            width: 80%;
+            max-width: 600px;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 3px solid #146821;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #0056b3;
+            outline: none;
+        }
+
+        .contact-form button {
+            background-color: #cc7d50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
             .profile-pic {
-                width: 140px;
-                height: 140px;
+                width: 120px;
+                height: 120px;
             }
+
             h1 {
                 font-size: 26px;
             }
+
+            p {
+                font-size: 14px;
+            }
+
             .button {
                 font-size: 16px;
+            }
+
+            .social-icons a {
+                font-size: 24px;
+                margin: 0 8px;
+            }
+
+            .contact-form input,
+            .contact-form textarea {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                flex-direction: column;
+                justify-content: flex-start;
+                height: auto;
+                padding: 20px;
+            }
+
+            .container {
+                width: 100%;
+                padding: 15px;
+                margin-top: 0px;
+            }
+
+            .profile-pic {
+                width: 200px;
+                height: 200px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 1000;
+            }
+
+            .button {
+                padding: 12px;
+                font-size: 14px;
+            }
+
+            .social-icons a {
+                font-size: 45px;
+                margin: 0 5px;
+            }
+
+            .contact-form input,
+            .contact-form textarea {
+                width: 100%;
             }
         }
     </style>
@@ -123,27 +240,92 @@
                 <a href="https://instagram.com/iammrengineer" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
                 <a href="https://linkedin.com/in/Ramgopal-prajapati" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/Ramgopal-prajapati" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://wa.me/9753528324" target="_blank" title="GitHub"><i class="fab fa-whatsapp"></i></a>
-
-                <!-- Add more social media links as needed -->
+                <a href="https://wa.me/919753528324" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
             </div>
         </header>
+
         <main>
-            <a href="https://Ramgopal-prajapati.github.io/Ramgopal/" class="button"><i class="fas fa-globe"></i>My Website</a>
-            <a href="https://Ramgopal-prajapati.github.io/courses/" class="button"><i class="fas fa-globe"></i>My Popular Courses</a>
-            <a href="https://ramgopal.polay2002@gmail.com" class="button"><i class="fas fa-envelope"></i>My Email Address</a>
-            <a href="https://linkedin.com/in/Ramgopal-prajapati" class="button"><i class="fas fa-user"></i>My LinkedIn Page</a>
+            <a href="https://Ramgopal-prajapati.github.io/Ramgopal/" class="button" target="_blank"><i class="fas fa-globe"></i>My Website</a>
+            <a href="https://Ramgopal-prajapati.github.io/courses/" class="button" target="_blank"><i class="fas fa-globe"></i>My Popular Courses</a>
+            <a href="https://linkedin.com/in/Ramgopal-prajapati" class="button" target="_blank"><i class="fas fa-user"></i>My LinkedIn Page</a>
+            <a href="mailto:ramgopal.polay2002@gmail.com" class="button" target="_blank"><i class="fas fa-envelope"></i>My Email Address</a>
+            <a href="https://wa.me/919753528324" class="button" target="_blank"><i class="fas fa-phone"></i>+91-9753528324</a>
+            <a href="https://wa.me/919753528324" class="button" target="_blank"><i class="fas fa-envelope"></i>Admission Counselling</a>
+            <a href="https://wa.me/919753528324 "class="button" target="_blank"><i class="fas fa-envelope"></i>Other Career Issue</a>
 
-
-            <!-- Add more links with icons as needed -->
         </main>
+
+        <!-- Contact Form -->
+        <form class="contact-form" action="#" method="post">
+            <h1>Do You have  any  Query?</h1>
+            <h2>Contact Me</h2>
+            <input type="text" name="name" placeholder="Enter Your Name" id="name" required>
+            <input type="email" name="email" placeholder="Enter Your Email" id="email" required>
+            <input type="text" name="number" placeholder="Enter Your Mobile NO." id="number" required>
+            <input type="text" name="college" placeholder="Enter Your College Name" id="college" required>
+
+            <textarea name="message" placeholder="Your Message" rows="4" id="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        
+
         <footer>
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p>&copy; 2024 Ramgopal Prajapati. All rights reserved.</p>
         </footer>
     </div>
+
+    <!-- Anime.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
     <script>
-        // JavaScript for additional functionality if needed
-        console.log("Page loaded and ready!");
+        // Anime.js animations
+
+        // Animate container appearance
+        anime({
+            targets: '.container',
+            opacity: [0, 1],
+            duration: 1000,
+            easing: 'easeInOutQuad',
+            delay: 200
+        });
+
+        // Animate profile picture fade-in
+        anime({
+            targets: '.profile-pic',
+            opacity: [0, 1],
+            duration: 1300,
+            easing: 'easeInOutQuad',
+            delay: 400
+        });
+
+        // Animate heading and paragraph fade-in
+        anime({
+            targets: 'h1, p',
+            opacity: [0, 1],
+            duration: 1500,
+            easing: 'easeInOutQuad',
+            delay: anime.stagger(300, {start: 600})
+        });
+
+        // Animate buttons sliding in from the bottom
+        anime({
+            targets: '.button',
+            opacity: [0, 1],
+            translateY: [50, 0],
+            duration: 1800,
+            easing: 'easeOutElastic(1, .8)',
+            delay: anime.stagger(200, {start: 900})
+        });
+
+        // Animate form elements
+        anime({
+            targets: '.contact-form input, .contact-form textarea, .contact-form button',
+            opacity: [0, 1],
+            translateY: [30, 0],
+            duration: 1500,
+            easing: 'easeOutElastic(1, .8)',
+            delay: anime.stagger(200, {start: 1000})
+        });
     </script>
 </body>
 </html>
